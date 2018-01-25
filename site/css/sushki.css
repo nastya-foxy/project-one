@@ -163,6 +163,9 @@ h2 {
   }
   .timer .flip-clock-wrapper .flip {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow:  0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow:  0 2px 4px 0 rgba(0, 0, 0, 0.2);
+
   }
   .timer .flip-clock-divider .flip-clock-label {
     top: auto;
@@ -174,18 +177,29 @@ h2 {
     color: #fff;
     text-shadow: 0 1px 0 #000;
     border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
   }
   .timer .flip-clock-wrapper ul li a div.down {
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    -khtml-border-radius-bottomright: 2px;
+    -khtml-border-radius-bottomleft: 2px;
+    -moz-border-radius-bottomright: 2px;
+    -moz-border-radius-bottomleft: 2px;
   }
   .timer .flip-clock-wrapper ul {
     width: 29px;
     height: 44px;
     margin: 2px;
     border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
   }
   .timer .flip-clock-wrapper ul li {
     line-height: 44px;
@@ -201,6 +215,8 @@ h2 {
     width: 2px;
     height: 2px;
     box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
     left: 6px;
   }
   .timer .flip-clock-dot.top {
@@ -231,6 +247,9 @@ h2 {
     height: 470px;
     background: #fff;
     border-radius: 15px;
+    -moz-border-radius: 15px; /* gecko */
+    -webkit-border-radius: 15px;
+    -khtml-border-radius: 15px;
     padding: 30px;
     position: relative;
   }
@@ -243,6 +262,9 @@ h2 {
     height: 100px;
     border: 2px solid #ffad00;
     border-radius: 10px;
+    -moz-border-radius: 10px; /* gecko */
+    -webkit-border-radius: 10px;
+    -khtml-border-radius: 10px;
     margin-right: 13px;
   }
   #makeoffer2 .top h4{
@@ -286,19 +308,22 @@ h2 {
     background-color: #fff;
     border: 1px solid #b3b3b3;
     border-radius: 5px;
+    -moz-border-radius: 5px; /* gecko */
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
     margin-top: 7px;
     margin-bottom: 22px;
     padding-left: 10px;
   }
   #makeoffer2 .right{
     display: inline-block;
-      margin-top: 27px;
-      padding-left: 20px;
+    margin-top: 27px;
+    padding-left: 20px;
   }
   #makeoffer2 .right .btn{
-    margin-top: 30px;
-    display: block;
-    width: 290px;
+  margin-top: 30px;
+  display: block;
+  width: 290px;
   height: 50px;
   font-size: 20px;
   font-weight: 700;
@@ -319,9 +344,12 @@ h2 {
     padding-left: 16px;
     position: relative;
     border-radius: 5px;
+    -moz-border-radius: 5px; /* gecko */
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
   }
   #makeoffer2 .right .radio-wr .radio-label{
-      color: #000;
+    color: #000;
     font-family: "PF Din Text Cond Pro";
     font-size: 16px;
     font-weight: 400;
@@ -332,6 +360,9 @@ h2 {
     width: 60px;
     height: 40px;
     border-radius: 5px;
+    -moz-border-radius: 5px; /* gecko */
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
     text-align: center;
     margin-right: 20px;
     margin-top: 20px;
@@ -357,6 +388,9 @@ h2 {
       text-align: center;
       padding-top: 30px;
       border-radius: 15px 15px 0 0;
+      -moz-border-radius: 15px 15px 0 0; /* gecko */
+      -webkit-border-radius: 15px 15px 0 0;
+      -khtml-border-radius: 15px 15px 0 0;
       color: #fff;
       font-family: "PF Din Text Cond Pro";
       font-size: 30px;
@@ -389,6 +423,10 @@ h2 {
     .radio {
       position: absolute;
       opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* internet explorer 8 */
+      filter: alpha(opacity=0); /* internet explorer 5~7 */
+      -khtml-opacity: 0;      /* khtml, old safari */
+      -moz-opacity: 0;       /* mozilla, netscape */
     }
     .radio + label {
       position: relative;
@@ -404,6 +442,9 @@ h2 {
       background-color: #fff;
       border: 2px solid #b3b3b3;
       border-radius: 50%;
+      -moz-border-radius: 50%; /* gecko */
+      -webkit-border-radius: 50%; /* webkit */
+      -khtml-border-radius: 50%;
     }
     .radio + label:after {
       content: '';
@@ -415,10 +456,18 @@ h2 {
       background: #2cac01;
       border-radius: 50%;
       opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* internet explorer 8 */
+      filter: alpha(opacity=0); /* internet explorer 5~7 */
+      -khtml-opacity: 0;      /* khtml, old safari */
+      -moz-opacity: 0;       /* mozilla, netscape */
       transition: all .2s;
     }
     .radio:checked + label:after {
       opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)"; /* internet explorer 8 */
+      filter: alpha(opacity=1); /* internet explorer 5~7 */
+      -khtml-opacity: 1;      /* khtml, old safari */
+      -moz-opacity: 1;       /* mozilla, netscape */
     }
   #onlineok{
     display: none;
@@ -440,18 +489,24 @@ h2 {
   .fancybox-skin {
     background: transparent !important;
     box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
   }
   input.error,
   textarea.error{
     border-color: #f00 !important;
     background: url(../img/input-error.png) 100% 50% no-repeat, #fff !important;
     box-shadow: inset 0 0 0 1px #f00 !important;
+    -moz-box-shadow: inset 0 0 0 1px #f00 !important;
+    -webkit-box-shadow: inset 0 0 0 1px #f00 !important;
   }
   input.valid:not([type="radio"]),
   textarea.valid {
     border-color: #39b54a !important;
     background: url(../img/input-valid.png) 100% 50% no-repeat, #fff !important;
     box-shadow: inset 0 0 0 1px #39b54a !important;
+    -moz-box-shadow: inset 0 0 0 1px #39b54a !important;
+    -webkit-box-shadow: inset 0 0 0 1px #39b54a !important;
   }
   label.error:not(#pay-error) {
     position: absolute;
@@ -479,6 +534,9 @@ h2 {
     padding: 0 40px;
     background-color: #fff;
     border-radius: 3px;
+    -moz-border-radius: 3px; /* gecko */
+    -webkit-border-radius: 3px; /* webkit */
+    -khtml-border-radius: 3px; /* old konkeror */
   }
   #sucsess p,
   #onlineok p{
@@ -489,6 +547,9 @@ h2 {
   #makeoffer{
     background: #fff;
     border-radius: 15px;
+    -moz-border-radius: 15px; /* gecko */
+    -webkit-border-radius: 15px; /* webkit */
+    -khtml-border-radius: 15px; /* old konkeror */
     width: 300px;
     padding: 35px 15px;
   }
@@ -509,6 +570,9 @@ h2 {
     background-color: #fff;
     border: 1px solid #b3b3b3;
     border-radius: 5px;
+    -moz-border-radius: 5px; /* gecko */
+    -webkit-border-radius: 5px; /* webkit */
+    -khtml-border-radius: 5px; /* old konkeror */
     padding: 0 10px;
     font-size: 16px;
     color: #000;
@@ -664,6 +728,9 @@ h2 {
             height: 44px;
             box-shadow: inset 0 2px 2px 0 rgba(255, 255, 255, 0.5), 0 2px 5px 0 rgba(0, 0, 0, 0.3);
             border-radius: 7px;
+            -moz-border-radius: 7px; /* gecko */
+            -webkit-border-radius: 7px; /* webkit */
+            -khtml-border-radius: 7px; /* old konkeror */
             font-size: 20px;
             border: none;
             padding: 0;
@@ -681,6 +748,9 @@ h2 {
           
           .order-form {
             border-radius: 7px;
+            -moz-border-radius: 7px; /* gecko */
+            -webkit-border-radius: 7px; /* webkit */
+            -khtml-border-radius: 7px; /* old konkeror */
             text-align: center;
             font-size: 0;
             border: 1px solid #fc913a;
@@ -709,6 +779,9 @@ h2 {
             vertical-align: top;
             border: none;
             border-radius: 8px;
+            -moz-border-radius: 8px; /* gecko */
+            -webkit-border-radius: 8px; /* webkit */
+            -khtml-border-radius: 8px; /* old konkeror */
             width: 250px;
             height: 40px;
             color: #212121;
@@ -720,18 +793,34 @@ h2 {
           .order-form input::-webkit-input-placeholder {
             color: #212121;
             opacity: .5;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* internet explorer 8 */
+            filter: alpha(opacity=50); /* internet explorer 5~7 */
+            -khtml-opacity: 0.5;      /* khtml, old safari */
+            -moz-opacity: 0.5;       /* mozilla, netscape */
           }
           .order-form input::-moz-placeholder {
             color: #212121;
             opacity: .5;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* internet explorer 8 */
+            filter: alpha(opacity=50); /* internet explorer 5~7 */
+            -khtml-opacity: 0.5;      /* khtml, old safari */
+            -moz-opacity: 0.5;       /* mozilla, netscape */
           }
           .order-form input:-moz-placeholder {
             color: #212121;
             opacity: .5;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* internet explorer 8 */
+            filter: alpha(opacity=50); /* internet explorer 5~7 */
+            -khtml-opacity: 0.5;      /* khtml, old safari */
+            -moz-opacity: 0.5;       /* mozilla, netscape */
           }
           .order-form input:-ms-input-placeholder {
             color: #212121;
             opacity: .5;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* internet explorer 8 */
+            filter: alpha(opacity=50); /* internet explorer 5~7 */
+            -khtml-opacity: 0.5;      /* khtml, old safari */
+            -moz-opacity: 0.5;       /* mozilla, netscape */
           }
           .order-form .grad-btn {
             margin: 0px auto;
@@ -741,6 +830,9 @@ h2 {
           .timer {
             background: #fff;
             border-radius: 0 0 7px 7px;
+            -moz-border-radius: 0 0 7px 7px;
+            -webkit-border-radius: 0 0 7px 7px;
+            -khtml-border-radius: 0 0 7px 7px;
             padding: 16px 0;
           }
           .order-form .timer .title {
@@ -837,6 +929,9 @@ h2 {
               
               .order-form {
                 border-radius: 7px;
+                -moz-border-radius: 7px; /* gecko */
+                -webkit-border-radius: 7px; /* webkit */
+                -khtml-border-radius: 7px; /* old konkeror */
                 text-align: center;
                 font-size: 0;
                 border: 1px solid #fc913a;
@@ -876,18 +971,34 @@ h2 {
               .order-form input::-webkit-input-placeholder {
                 color: #212121;
                 opacity: .5;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* internet explorer 8 */
+                filter: alpha(opacity=50); /* internet explorer 5~7 */
+               -khtml-opacity: 0.5;      /* khtml, old safari */
+               -moz-opacity: 0.5;       /* mozilla, netscape */
               }
               .order-form input::-moz-placeholder {
                 color: #212121;
                 opacity: .5;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* internet explorer 8 */
+                filter: alpha(opacity=50); /* internet explorer 5~7 */
+               -khtml-opacity: 0.5;      /* khtml, old safari */
+               -moz-opacity: 0.5;       /* mozilla, netscape */
               }
               .order-form input:-moz-placeholder {
                 color: #212121;
                 opacity: .5;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* internet explorer 8 */
+                filter: alpha(opacity=50); /* internet explorer 5~7 */
+               -khtml-opacity: 0.5;      /* khtml, old safari */
+               -moz-opacity: 0.5;       /* mozilla, netscape */
               }
               .order-form input:-ms-input-placeholder {
                 color: #212121;
                 opacity: .5;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* internet explorer 8 */
+                filter: alpha(opacity=50); /* internet explorer 5~7 */
+               -khtml-opacity: 0.5;      /* khtml, old safari */
+               -moz-opacity: 0.5;       /* mozilla, netscape */
               }
               .order-form .grad-btn {
                 margin: 0px auto;
@@ -897,6 +1008,9 @@ h2 {
               .timer {
                 background: #fff;
                 border-radius: 0 0 7px 7px;
+                -moz-border-radius: 0 0 7px 7px; /* gecko */
+                -webkit-border-radius: 0 0 7px 7px; /* webkit */
+               -khtml-border-radius: 0 0 7px 7px; /* old konkeror */
                 padding: 16px 0;
               }
               .order-form .timer .title {
@@ -1021,6 +1135,9 @@ h2 {
                 vertical-align: top;
                 border: none;
                 border-radius: 8px;
+                -moz-border-radius: 8px; /* gecko */
+                -webkit-border-radius: 8px; /* webkit */
+                -khtml-border-radius: 8px; /* old konkeror */
                 width: 306px;
                 height: 40px;
                 color: #212121;
@@ -1032,18 +1149,34 @@ h2 {
               .order-form input::-webkit-input-placeholder {
                 color: #212121;
                 opacity: .5;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* internet explorer 8 */
+                filter: alpha(opacity=50); /* internet explorer 5~7 */
+                -khtml-opacity: 0.5;      /* khtml, old safari */
+                -moz-opacity: 0.5;       /* mozilla, netscape */
               }
               .order-form input::-moz-placeholder {
                 color: #212121;
                 opacity: .5;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* internet explorer 8 */
+                filter: alpha(opacity=50); /* internet explorer 5~7 */
+                -khtml-opacity: 0.5;      /* khtml, old safari */
+                -moz-opacity: 0.5;       /* mozilla, netscape */
               }
               .order-form input:-moz-placeholder {
                 color: #212121;
                 opacity: .5;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* internet explorer 8 */
+                filter: alpha(opacity=50); /* internet explorer 5~7 */
+                -khtml-opacity: 0.5;      /* khtml, old safari */
+                -moz-opacity: 0.5;       /* mozilla, netscape */
               }
               .order-form input:-ms-input-placeholder {
                 color: #212121;
                 opacity: .5;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* internet explorer 8 */
+                filter: alpha(opacity=50); /* internet explorer 5~7 */
+                -khtml-opacity: 0.5;      /* khtml, old safari */
+                -moz-opacity: 0.5;       /* mozilla, netscape */
               }
               .order-form .grad-btn {
                 margin: 0px auto;
@@ -1053,6 +1186,9 @@ h2 {
               .timer {
                 background: #fff;
                 border-radius: 0 0 7px 7px;
+                -moz-border-radius: 0 0 7px 7px; /* gecko */
+                -webkit-border-radius: 0 0 7px 7px; /* webkit */
+                -khtml-border-radius: 0 0 7px 7px; /* old konkeror */
                 padding: 16px 0;
               }
               .order-form .timer .title {
@@ -1328,6 +1464,9 @@ h2 {
             vertical-align: top;
             border: none;
             border-radius: 8px;
+            -moz-border-radius: 8px;
+            -webkit-border-radius: 8px;
+            -khtml-border-radius: 8px;
             width: 306px;
             height: 40px;
             color: #212121;
@@ -1339,18 +1478,34 @@ h2 {
           .order-form input::-webkit-input-placeholder {
             color: #212121;
             opacity: .5;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* internet explorer 8 */
+            filter: alpha(opacity=50); /* internet explorer 5~7 */
+            -khtml-opacity: 0.5;      /* khtml, old safari */
+            -moz-opacity: 0.5;       /* mozilla, netscape */
           }
           .order-form input::-moz-placeholder {
             color: #212121;
             opacity: .5;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* internet explorer 8 */
+            filter: alpha(opacity=50); /* internet explorer 5~7 */
+            -khtml-opacity: 0.5;      /* khtml, old safari */
+            -moz-opacity: 0.5;       /* mozilla, netscape */
           }
           .order-form input:-moz-placeholder {
             color: #212121;
             opacity: .5;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* internet explorer 8 */
+            filter: alpha(opacity=50); /* internet explorer 5~7 */
+            -khtml-opacity: 0.5;      /* khtml, old safari */
+            -moz-opacity: 0.5;       /* mozilla, netscape */
           }
           .order-form input:-ms-input-placeholder {
             color: #212121;
             opacity: .5;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* internet explorer 8 */
+            filter: alpha(opacity=50); /* internet explorer 5~7 */
+            -khtml-opacity: 0.5;      /* khtml, old safari */
+            -moz-opacity: 0.5;       /* mozilla, netscape */
           }
           .order-form .grad-btn {
             margin: 20px auto;
